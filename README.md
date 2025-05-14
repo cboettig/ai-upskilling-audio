@@ -110,4 +110,20 @@ Then, complete the `03_anuraset_train.ipynb` notebook.
 
 Wanna go fast? Soup up your data loading pipeline with multithreading in `03b_threads.ipynb`.
 
-## The rest is yet to come!
+## 7. Learn more about vector databases
+
+`04_vector_search.ipynb`
+
+## 8. Additional mini-projects
+
+You've successfully trained a simple binary classifier with Perch embeddings with `03_anuraset_train.ipynb`. Nice work! Here are some additional things you can try to gain more experience training and evaluating classifiers:
+
+- [Evaluation] Think about different ways you can stratify your test set. How does the model perform on different sites? How about on clips with different numbers of species present? From different days or times of day? Make some plots to break down performance.
+
+- [Training & Evaluation] Try using different embedding models. How does the choice of embedding change the performance of your classifier? How does this change across the strata you came up with before?
+
+- [Training] Try training a multiclass classifier, rather than a binary classifier.
+
+- [Evaluation] Try recreating the t-SNE plot from [this paper, Figure 3](https://www.nature.com/articles/s41598-023-49989-z/figures/3). Can you think of other ways to color-code the points (hint: what about your strata above?)
+
+
