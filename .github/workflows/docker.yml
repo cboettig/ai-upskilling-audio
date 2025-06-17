@@ -27,7 +27,7 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v7
+        uses: docker/build-push-action
         with:
           context: .
           push: true
