@@ -1,5 +1,5 @@
 # Base image with CUDA support and TensorFlow
-FROM tensorflow/tensorflow:2.15.0-gpu-jupyter
+FROM quay.io/jupyter/tensorflow-notebook:cuda-python-3.11
 
 # Set working directory
 WORKDIR /home/jovyan/work
