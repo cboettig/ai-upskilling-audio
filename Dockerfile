@@ -17,7 +17,8 @@ RUN pip install \
     requests \
     tensorflow-hub \
     ipywidgets \
-    etils
+    etils \
+    jupyterhub
 
 # Clone and install perch-hoplite
 RUN git clone https://github.com/google-research/perch-hoplite.git
