@@ -5,12 +5,14 @@ FROM quay.io/jupyter/tensorflow-notebook:cuda-python-3.11
 WORKDIR /home/jovyan/work
 
 # Install system dependencies
+USER root
 RUN apt-get update && apt-get install -y \
     libsndfile1 \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Install additional Python dependencies
+USER ${NB_USER}
 RUN pip install --upgrade pip
 RUN pip install \
     absl-py \
